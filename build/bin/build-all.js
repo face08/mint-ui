@@ -1,5 +1,8 @@
 'use strict';
 
+/**
+ * 编译所有单个组件
+ */
 const components = require('../../components.json');
 const execSync = require('child_process').execSync;
 const existsSync = require('fs').existsSync;

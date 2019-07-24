@@ -1,3 +1,7 @@
+### 阅读
+* npm命令查看Makefile文件
+
+
 # Mint UI
 
 [![Build Status](https://travis-ci.org/ElemeFE/mint-ui.svg?branch=master)](https://travis-ci.org/ElemeFE/mint-ui)

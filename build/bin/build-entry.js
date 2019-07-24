@@ -1,3 +1,6 @@
+/**
+ * 自动生成文件 src/index.js
+ */
 var Components = require('../../components.json');
 var fs = require('fs');
 var render = require('json-templater/string');
@@ -7,7 +10,9 @@ var path = require('path');
 var OUTPUT_PATH = path.join(__dirname, '../../src/index.js');
 var IMPORT_TEMPLATE = 'import {{name}} from \'../packages/{{package}}\';';
 var ISNTALL_COMPONENT_TEMPLATE = '  Vue.component({{name}}.name, {{name}});';
-var MAIN_TEMPLATE = `{{include}}
+// d
+var MAIN_TEMPLATE = `
+{{include}}
 import '../src/assets/font/iconfont.css';
 import merge from './utils/merge';
 
@@ -55,12 +60,13 @@ ComponentNames.forEach(name => {
     package: name
   }));
 
+  // 忽略列表
   if ([
-      // directives
+      // directives 指令
     'InfiniteScroll',
     'Lazyload',
 
-      // services
+      // services 服务
     'MessageBox',
     'Toast',
     'Indicator'
